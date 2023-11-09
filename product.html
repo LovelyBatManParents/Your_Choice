@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Your_Choice</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/Yc.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+
+-->
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i> yourchoice@company.com</li>
+            <li><i class="fa fa-map"></i> Times City, Hantharwady</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Your_Choice</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="index.html" >Home</a></li>
+                      <li><a href="product.html"class="active">Product</a></li>
+                      <li><a href="location.html">Store location</a></li>
+                      <li><a href="Favorite.html">Favorites</a></li>
+                      <li><a href="AboutUs.html">About Us</a></li>
+                      <li><a href="login.html"><i class="fa fa-calendar"></i> Sign In for Promos!</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="breadcrumb"><a href="#">Home</a> / Product</span>
+          <h3>All Models</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="section properties">
+    <div class="container">
+      <ul class="properties-filter">
+        <li>
+          <a class="is_active" href="#!" data-filter="*">Show All</a>
+        </li>
+        <li>
+          <a href="classS.html" data-filter=".grade-s">Grade-S</a>
+        </li>
+        <li>
+          <a href="classA.html" data-filter=".grade-a">Grade-A</a>
+        </li>
+        <li>
+          <a href="classB.html" data-filter=".grade-b">Grade-B</a>
+        </li>
+      </ul>
+      
+<div>
+    <h3 style="padding: 30pt;">
+        Choose Your Favorite
+    </h3>
+</div>
+
+
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button> -->
+
+<!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Product details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="item m-0">
+            <img src="assets/images/property-01.jpg" style="height: 30em; " id="imgscr"  alt="">
+            <span class="category">Rolex</span>
+            <h6 id="price">$45,750</h6>
+            <h4 id="w_name">Sky-Dweller</h4>
+            <h5>Details</h5>
+            <p id="desc"></p>
+            
+            <div class="main-button">
+              <button class="buy-btn" onclick="addToCart('Sky-Dweller', 'Rolex', '45,750', 'assets/image/property-01.jpg')">Add To Favourite</button>            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Product details adjustment -->
+<div class="row">
+    <div class="col-lg-4 col-md-6 grade-s">
+      <div class="item">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Rolex" dat-img="assets/images/property-01.jpg" data-price="$45,750" data-name="Sky-Dweller" data-descript="The Rolex Sky Dweller is a luxury timepiece with a striking combination of Oyster material and white gold. Priced at $45,750, it's a symbol of refined taste and appreciation for finer things. Wearing it invites one to experience the world in a luxurious way, transcending time." ><img src="assets/images/property-01.jpg" alt=""></a>
+            <span class="category">Rolex</span>
+            <h6>$45,750</h6>
+            <h4>Sky-Dweller</a></h4>
+            <ul>
+              <li>Material: <span>Oyster</span></li>
+              <li>Size: <span>42mm</span></li>
+              <li>Color: <span>Oyster and white gold</span></li>
+            </ul>
+            <div class="main-button">
+              <button class="buy-btn" onclick="addToCart('Sky-Dweller', 'Rolex', '45,750', 'assets/image/property-01.jpg')">Add To Favourite</button>            </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 grade-s">
+        <div class="item">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Rolex" dat-img="assets/images/property-02.jpg" data-price="$24,950" data-name="1908" data-descript="The Rolex 1908 is a timeless, luxury watch crafted with precision and yellow gold, featuring Oyster material for durability. Priced at $24,950, it embodies opulence, status, and craftsmanship. Wearing it exudes a sense of grandeur and invites one to embrace the world in an opulent way."><img src="assets/images/property-02.jpg" alt=""></a>
+            <span class="category">Rolex</span>
+            <h6>$24,950</h6>
+            <h4>1908</a></h4>
+            <ul>
+              <li>Material: <span>Oyster</span></li>
+              <li>Size: <span>39mm</span></li>
+              <li>Color: <span>Yellow gold</span></li>
+            </ul>
+            <div class="main-button">
+              <button class="buy-btn" onclick="addToCart('Sky-Dweller', 'Rolex', '45,750', 'assets/image/property-01.jpg')">Add To Favourite</button>            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 grade-s">
+        <div class="item">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Rolex" dat-img="assets/images/property-03.jpg" data-price="$34,400" data-name="Cosmograph Daytona" data-descript="The Rolex Cosmograph Daytona is a luxury watch priced at $34,400, crafted from Oyster material and finished in platinum. It embodies opulence, sophistication, and refinement, reflecting discerning taste and a lifelong connection to the world of luxury. Wearing it is a statement of appreciation for finer things in life."><img src="assets/images/property-03.jpg" alt=""></a>
+            <span class="category">Rolex</span>
+            <h6>$34,400</h6>
+            <h4>Cosmograph Daytona</a></h4>
+            <ul>
+              <li>Material: <span>Oyster</span></li>
+              <li>Size: <span>40mm</span></li>
+              <li>Color: <span>Platinum</span></li>
+            </ul>
+            <div class="main-button">
+              <button class="buy-btn" onclick="addToCart('Cosmograph Daytona', 'Rolex', '34,400', 'assets/image/property-03.jpg')">Add To Favourite</button>            </div>
+        </div>
+    </div>
+  </div>
+<!-- Patek -->
+<div class="row">
+  <div class="col-lg-4 col-md-6 grade-s">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Patek Philippe" dat-img="./assets/images/patek1.jpg" data-price="$35,750" data-name="Grand Complications Mechanical" data-descript="The Patek Philippe Grand Complications Mechanical watch is a luxury masterpiece, crafted with precision and adorned with Oyster and white gold. Priced at $35,750, it represents prestige, craftsmanship, and a connection to the grand tradition of watchmaking. Wearing this watch signifies indulgence, style, and appreciation for the rarefied world of haute horology."><img src="./assets/images/patek1.jpg" alt=""></a>
+      <span class="category">Patek Philippe</span>
+      <h6>$35,750</h6>
+      <h4>Grand Complications Mechanical</a></h4>
+      <ul>
+        <li>Material: <span>Lather</span></li>
+        <li>Size: <span>42mm</span></li>
+        <li>Color: <span>Oyster and white gold</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('Grand Complications Mechanical', 'Patek Philippe', '35,750', 'assets/image/patek1.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 grade-s">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Patek Philippe" dat-img="./assets/images/patek22.webp" data-price="$24,950" data-name="Grand Complications Mechanical" data-descript="The Patek Philippe Grand Complications Mechanical watch, priced at $24,950, is a symbol of luxury and prestige, crafted from Oyster material and adorned with yellow gold. It represents elevated status and discerning taste, reflecting a connection to the grand tradition of watchmaking. Wearing this watch invites refined moments and opulence."><img src="./assets/images/patek22.webp" alt="" height="420pt" class="image"></a>
+      <span class="category">Patek Philippe</span>
+      <h6>$24,950</h6>
+      <h4>Grand Complications Mechanical</a></h4>
+      <ul>
+        <li>Material: <span>Oyster</span></li>
+        <li>Size: <span>39mm</span></li>
+        <li>Color: <span>Yellow gold</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('Grand Complications Mechanical', 'Patek Philippe', '24,950', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 grade-s">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Patek Philippe" dat-img="./assets/images/patek33.jpg" data-price="$2,520" data-name="Grand Complications Mechanical" data-descript="The Patek Philippe Grand Complications Mechanical watch, priced at $2,520, is a symbol of luxury and sophistication, crafted from fine leather and platinum. It exudes opulence and discerning style, enhancing one's look and expressing appreciation for the finer things in life."><img src="./assets/images/patek33.jpg" alt=""></a>
+      <span class="category">Patek Philippe</span>
+      <h6>$2,520</h6>
+      <h4>Grand Complications Mechanical</a></h4>
+      <ul>
+        <li>Material: <span>Lather</span></li>
+        <li>Size: <span>40mm</span></li>
+        <li>Color: <span>Platinum</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('Grand Complications Mechanical', 'Patek Philippe', '2,520', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Titan -->
+<div class="row">
+  <div class="col-lg-4 col-md-6 grade-s">
+        <div class="item">
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Titan" dat-img="./assets/images/titan.jpg" data-price="$1,150" data-name="Modern Bandhan" data-descript="The Titan Modern Bandhan watch, priced at $1,150, is a sophisticated and affordable luxury watch made from Oyster material and featuring a rich blue color. It embodies refined style, understated opulence, and a sense of class, making it a Class-A choice for those who appreciate finer things."><img src="./assets/images/titan.jpg" alt=""></a>
+          <span class="category">Titan</span>
+          <h6>$1,150</h6>
+          <h4>Modern Bandhan</a></h4>
+          <ul>
+            <li>Material: <span>Oyster</span></li>
+            <li>Size: <span>42mm/36mm</span></li>
+            <li>Color: <span>Blue</span></li>
+          </ul>
+          <div class="main-button">
+     <button class="buy-btn" onclick="addToCart('Modern Bandhan', 'Titan', '1,150', 'assets/image/property-01.jpg')">Add To Favourite</button>          </div>
+        </div>
+  </div>
+  <div class="col-lg-4 col-md-6 grade-s">
+      <div class="item">
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Titan" dat-img="./assets/images/titan22.jpg" data-price="$2,950" data-name="Bandhan Green Dial" data-descript="The Titan Bandhan Green Dial watch, priced at $2,950, is a sophisticated timepiece with a rich green dial and a timeless design. It embodies refined style and discerning taste, enhancing one's presence and radiating a luxurious aura, making it a class-A choice for those who appreciate finer things."><img src="./assets/images/titan22.jpg" alt=""></a>
+          <span class="category">Titan</span>
+          <h6>$2,950</h6>
+          <h4>Bandhan Green Dial</a></h4>
+          <ul>
+            <li>Material: <span>Stainless steel</span></li>
+            <li>Size: <span>42mm</span></li>
+            <li>Color: <span>Green</span></li>
+          </ul>
+          <div class="main-button">
+     <button class="buy-btn" onclick="addToCart('Bandhan Green Dial', 'Titan', '2,950', 'assets/image/property-01.jpg')">Add To Favourite</button>          </div>
+      </div>
+  </div>
+  <div class="col-lg-4 col-md-6 grade-s">
+      <div class="item">
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Titan" dat-img="./assets/images/titan3.jpg" data-price="$2,200" data-name="Cosmograph Daytona" data-descript="The Titan Cosmograph Daytona watch is a class-A luxury timepiece, blending timeless design with opulent aesthetics. Crafted from steel and featuring a dark green and gold color combination, it exudes sophistication and exclusivity. Priced at $2,200, it represents refined style and impeccable taste, transcending its price point."><img src="./assets/images/titan3.jpg" alt=""></a>
+          <span class="category">Titan</span>
+          <h6>$2,200</h6>
+          <h4>Cosmograph Daytona</a></h4>
+          <ul>
+            <li>Material: <span>Steel</span></li>
+            <li>Size: <span>40mm</span></li>
+            <li>Color: <span>Dark Green/Gold</span></li>
+          </ul>
+          <div class="main-button">
+     <button class="buy-btn" onclick="addToCart('Cosmograph Daytona', 'Titan', '2,200', 'assets/image/property-01.jpg')">Add To Favourite</button>          </div>
+      </div>
+  </div>
+</div> 
+<!-- Omega -->
+<div class="row">
+  <div class="col-lg-4 col-md-6 grade-s">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Omega" dat-img="./assets/images/omega" data-price="$3,750" data-name="Prestige" data-descript="The Omega Prestige watch is a class-A luxury timepiece, combining timeless design with opulent aesthetics. Crafted from fine leather and sleek black, it exudes sophistication and exclusivity. Priced at $3,750, it represents refined style and discerning taste, elevating one's presence and enveloping them in a luxurious ambiance"><img src="./assets/images/omega" alt=""></a>
+      <span class="category">Omega</span>
+      <h6>$3,750</h6>
+      <h4>Prestige</a></h4>
+      <ul>
+        <li>Material: <span>Lather</span></li>
+        <li>Size: <span>42mm</span></li>
+        <li>Color: <span>Black</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('Prestige', 'Omega', '3,750', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 grade-s">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Omega" dat-img="./assets/images/omega2" data-price="$2,900" data-name="Moonwatch" data-descript="The Omega Moonwatch is a class-A luxury timepiece, expertly crafted from stainless steel and featuring a captivating blue color. Priced at $2,900, it represents refined style and impeccable taste, evoking a sense of class and distinction. Wearing this watch elevates your presence and represents the finer things in life."><img src="./assets/images/omega2" alt=""></a>
+      <span class="category">Omega</span>
+      <h6>$2,900</h6>
+      <h4>Moonwatch</a></h4>
+      <ul>
+        <li>Material: <span>Stainless Steel</span></li>
+        <li>Size: <span>39mm</span></li>
+        <li>Color: <span>Blue</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('Moonwatch', 'Omega', '2,900', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 grade-s">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Omega" dat-img="./assets/images/omega33.jpg" data-price="$3,400" data-name="Tresor" data-descript="The Omega Tresor watch, priced at $3,400, is a class-A luxury timepiece crafted from fine leather and rich brown color. It embodies sophistication and exclusivity, reflecting a penchant for understated yet undeniable luxury. Wearing this watch elevates one's presence, enveloping them in a luxurious ambiance."><img src="./assets/images/omega33.jpg" alt=""></a>
+      <span class="category">Omega</span>
+      <h6>$3,400</h6>
+      <h4>Tresor</a></h4>
+      <ul>
+        <li>Material: <span>Lather</span></li>
+        <li>Size: <span>40mm</span></li>
+        <li>Color: <span>Brown</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('Tresor', 'Omega', '45,750', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+</div>
+<!-- seiko -->
+<div class="row">
+  <div class="col-lg-4 col-md-6 grade-b">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Seiko" dat-img="./assets/images/seiko1.jpg" data-price="$450" data-name="Monster" data-descript="The Seiko Monster watch, priced at $450, is a class-B yet luxurious timepiece made from fine leather and sleek black color. It combines sophistication with affordability, offering a unique blend of quality and value, attracting those seeking a balance between value and luxury."><img src="./assets/images/seiko1.jpg" alt=""></a>
+      <span class="category">Seiko</span>
+      <h6>$450</h6>
+      <h4>Monster</a></h4>
+      <ul>
+        <li>Material: <span>Lather</span></li>
+        <li>Size: <span>42mm</span></li>
+        <li>Color: <span>Black</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('Monster', 'Seiko', '450', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 grade-b">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Seiko" dat-img="assets/images/seiko2.jpg" data-price="$330" data-name="Shogun" data-descript="The Seiko Shogun watch, priced at $330, is a class-B yet luxurious timepiece made of fine leather and sleek black color. It strikes a balance between style and affordability, offering an elegant yet affordable option for refined taste enthusiasts.
+      "><img src="assets/images/seiko2.jpg" alt=""></a>
+      <span class="category">Seiko</span>
+      <h6>$330</h6>
+      <h4>Shogun</a></h4>
+      <ul>
+        <li>Material: <span>Lather</span></li>
+        <li>Size: <span>39mm</span></li>
+        <li>Color: <span>Black</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('Shogun', 'Seiko', '330', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 grade-b">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Seiko" dat-img="assets/images/seikok3" data-price="$400" data-name="Samurai" data-descript="The Seiko Samurai watch, priced at $400, is a class-B yet luxurious timepiece made from stainless steel and platinum. It strikes a balance between style and affordability, offering an accessible alternative for those discerning in well-crafted timepieces. It exudes understated elegance and a sense of achievable yet distinguished style."><img src="assets/images/seikok3" alt=""></a>
+      <span class="category">Seiko</span>
+      <h6>$400</h6>
+      <h4>Samurai</a></h4>
+      <ul>
+        <li>Material: <span>Steel</span></li>
+        <li>Size: <span>40mm</span></li>
+        <li>Color: <span>Platinum</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('Samurai', 'Seiko', '400', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+</div>
+<!-- casio -->
+<div class="row">
+  <div class="col-lg-4 col-md-6 Grade-B">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Casio" dat-img="assets/images/casio1" data-price="$200" data-name="G-SHOCK" data-descript="The Casio G-Shock watch, priced at $200, is a unique and affordable timepiece that combines leather and industrial design in sleek black. It strikes a balance between style and affordability, offering a practical luxury that resonates with those who value quality, individuality, and edginess."><img src="assets/images/casio1" alt=""></a>
+      <span class="category">   Casio</span>
+      <h6>$200</h6>
+      <h4>G-SHOCK</a></h4>
+      <ul>
+        <li>Material: <span>Lather</span></li>
+        <li>Size: <span>42mm</span></li>
+        <li>Color: <span>Black</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('G-SHOCK', 'Casio', '200', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 grade-b">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Casio" dat-img="assets/images/casio2" data-price="$150" data-name="Casio WR" data-descript="The Casio WR watch, priced at $150, is a unique timepiece that combines class-B luxury with practicality. It features a leather band and sleek black design, making it a statement of personal style and a symbol of quality, individuality, and uniqueness."><img src="assets/images/casio2" alt=""></a>
+      <span class="category">Casio</span>
+      <h6>$150</h6>
+      <h4>Casio WR</a></h4>
+      <ul>
+        <li>Material: <span>Lather</span></li>
+        <li>Size: <span>39mm</span></li>
+        <li>Color: <span>Black</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('Casio WR', 'Casio', '150', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 grade-b">
+    <div class="item">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Casio" dat-img="assets/images/casio33.jpg" data-price="$190" data-name="MT-G" data-descript="The Casio MT-G watch, priced at $190, is a class-B luxury timepiece that combines practicality and style. Made from durable stainless steel, it features a rich brown color and is a symbol of accessible luxury, appealing to those who value quality and uniqueness."><img src="assets/images/casio33.jpg" alt=""></a>
+      <span class="category">Casio</span>
+      <h6>$190</h6>
+      <h4>MT-G</a></h4>
+      <ul>
+        <li>Material: <span>Steel</span></li>
+        <li>Size: <span>40mm</span></li>
+        <li>Color: <span>Brown</span></li>
+      </ul>
+      <div class="main-button">
+ <button class="buy-btn" onclick="addToCart('MT-G', 'Casio', '190', 'assets/image/property-01.jpg')">Add To Favourite</button>      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-8">
+        <p class="center-text">Copyright © 2048 Your_Choice Co., Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/addtowish.js"></script>
+   <script>
+    const exampleModal = document.getElementById('exampleModal')
+    if (exampleModal) {
+      exampleModal.addEventListener('show.bs.modal', event => {
+        // Button that triggered the modal
+        const button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        const recipient = button.getAttribute('data-bs-whatever')
+        const recipientImg = button.getAttribute('dat-img')
+        const recipientprice = button.getAttribute('data-price')
+        const recipientname = button.getAttribute('data-name')
+        const recipientmaterial = button.getAttribute('data-material')
+        const recipientsize = button.getAttribute('data-size')
+        const recipientcolor = button.getAttribute('data-color')
+        const recipientdescript = button.getAttribute('data-descript')
+
+        // If necessary, you could initiate an Ajax request here
+        // and then do the updating in a callback.
+
+        // Update the modal's content.
+        const categorys = exampleModal.querySelectorAll(".category");
+        const imgscr = exampleModal.querySelector("#imgscr");
+
+        const price = exampleModal.querySelector("#price");
+        const w_name = exampleModal.querySelector("#w_name");
+        const desc = exampleModal.querySelector("#desc");
+        const material = exampleModal.querySelector("#material");
+        const size = exampleModal.querySelector("#size");
+        const color = exampleModal.querySelector("#color");
+
+        // const modalTitle = exampleModal.querySelector('.modal-title')
+        // const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+        // modalTitle.textContent = `New message to ${recipient}`
+
+        imgscr.setAttribute("src",recipientImg);
+        price.innerHTML = recipientprice;
+        w_name.innerHTML = recipientname;
+        desc.innerHTML = recipientdescript;
+        material.innerHTML = recipientmaterial;
+        size.innerHTML = recipientsize;
+        color.innerHTML = recipientcolor;
+        categorys.forEach(element => {
+          element.innerHTML = recipient
+        });
+      })
+    }
+   </script>
+  
+
+  </body>
+</html>
